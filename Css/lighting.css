@@ -1217,11 +1217,11 @@ html[dir="rtl"] body {
 }
 
 /* Desktop */
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
   .main-nav { display: flex; }
   .hamburger { display: none; }
   .mobile-nav { display: none; }
-}
+} */
 
 
 
@@ -1233,10 +1233,5 @@ html[dir="rtl"] body {
 @media (min-width:768px) and (max-width:768px){
   .header-inner{
     gap:22rem
-  }
-}
-@media (min-width:1024px) and (max-width:1024px){
-  .header-inner{
-    gap:35rem
   }
 }

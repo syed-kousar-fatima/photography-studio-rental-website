@@ -1,55 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" dir="rtl" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrameSpace Studio</title>
-  <link rel="stylesheet" href="Css/gear.css" />
+    <link rel="stylesheet" href="Css/babyShower.css">
+    <link rel="icon" href="./logo.jpg" type="image/x-icon">
 </head>
 <body>
-    <header class="site-header" id="site-header">
+  <header class="site-header" id="site-header">
     <div class="header-inner">
-    
       <a href="#home" class="logo" data-ocid="header.home_link">
+        <img src="./logo.jpg" style="height:40px;width:auto;object-fit:contain;">
         <span class="logo-text">FrameSpace<span class="logo-accent">Studio</span></span>
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <div class="nav-item">
-          <a href="home1.html" data-ocid="header.home_link" class="nav-link active">Home</a>
+          <a href="home1.html" data-ocid="header.home_link" class="nav-link ">Home</a>
           <div class="dropdown-menu">
-            <a href="home.html" class="dropdown-item">Home</a>
+            <a href="./home1.html" class="dropdown-item">Home 1</a>
+             <a href="./home2.html" class="dropdown-item">Home 2</a>
           </div>
         </div>
-        
         <a href="about.html" data-ocid="header.studios_link" class="nav-link">About</a>
-         <div class="nav-item">
+     
           <a href="services.html" data-ocid="header.services_link" class="nav-link">Services</a>
-          <div class="dropdown-menu">
-            <a href="preWedding.html" class="dropdown-item">Pre-Wedding</a>
-            <a href="postWedding.html" class="dropdown-item">Post-Wedding</a>
-            <a href="wedding.html" class="dropdown-item">Wedding</a>
-            <a href="babyShower.html" class="dropdown-item">Baby Shower</a>
-            <a href="newbornMaternity.html" class="dropdown-item">Maternity</a>
-            <a href="newbornMaternity.html" class="dropdown-item">New Born</a>
-            <a href="birthdayShoot.html" class="dropdown-item">Birthday</a>
-            <a href="schoolFuntion.html" class="dropdown-item">School Function</a>
-            <a href="events.html" class="dropdown-item">Events</a>
-            <a href="portrait.html" class="dropdown-item">Portrait</a>
-            <a href="houseWarming.html" class="dropdown-item">House Warming</a>
-          </div>
-        </div>
-        
-        
-        <div class="nav-item">
-          <a href="blog.html" data-ocid="header.blog_link" class="nav-link ">Blog</a>
-          <div class="dropdown-menu">
-            <a href="lighting.html" class="dropdown-item">Lighting</a>
-             <a href="gear.html" class="dropdown-item">Gear</a>
-              <a href="creative.html" class="dropdown-item">Creative</a>
-               <a href="business.html" class="dropdown-item">Business</a>
-          </div>
-        </div>
+       
+          <a href="blog.html" data-ocid="header.blog_link" class="nav-link  ">Blog</a>
         <a href="contact.html" data-ocid="header.contact_link" class="nav-link">Contact</a>
+         <a href="./AdminDashboard.html" data-ocid="header.AdminDashboard" class="nav-link">Dashboard</a>
       </nav>
       <div class="header-actions">
         
@@ -61,21 +40,14 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
           </svg>
         </button>
-<a href="loginRegister.html">
-        <button class="icon-btn" data-ocid="header.login_button" aria-label="Login or Register" title="Login / Register">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-          </svg>
-        </button></a>
-<a href="AdminDashboard.html">
-        <button class="icon-btn" data-ocid="header.admin_button" aria-label="Admin Dashboard" title="Admin Dashboard">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
-          </svg>
-        </button></a>
-
-        <a href="404Page.html" class="btn btn-primary header-cta" data-ocid="header.book_now_button">Book Now</a>
-
+<button class="icon-btn rtl-btn" id="rtlToggle"
+  aria-label="Toggle RTL/LTR" title="Toggle RTL">
+  <span class="rtl-text">LTR</span>
+</button>
+       
+        
+  <a href="./loginRegister.html" class="btn btn-primary header-cta" data-ocid="header.sign_up_button">Sign Up</a>
+        <a href="./contact.html" class="btn btn-outline-white btn-lg header-cta" data-ocid="header.book_now_button" style="color: var(--brand-accent);">Book Now</a>
         <button class="hamburger" id="hamburgerBtn" data-ocid="header.hamburger_button" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="ham-bar"></span>
           <span class="ham-bar"></span>
@@ -84,140 +56,125 @@
       </div>
     </div>
 
+ 
     <div class="mobile-nav" id="mobileNav" data-ocid="header.mobile_menu" aria-hidden="true">
       <nav>
-        <a href="home.html" data-ocid="header.home_link" class="mobile-nav-link">Home</a>
+        <a href="./home1.html" data-ocid="header.home_link" class="mobile-nav-link">Home 1</a>
+        <a href="./home.html" data-ocid="header.home_link" class="mobile-nav-link">Home 2</a>
         <a href="about.html" data-ocid="header.studios_link" class="mobile-nav-link">About</a>
         <a href="services.html" data-ocid="header.services_link" class="mobile-nav-link">Services</a>
         <a href="blog.html" data-ocid="header.pricing_link" class="mobile-nav-link">Blog</a>
         <a href="contact.html" data-ocid="header.contact_link" class="mobile-nav-link">Contact</a>
+        <a href="./AdminDashboard.html" data-ocid="header.AdminDashboard" class="mobile-nav-link">Admin Dashboard</a>
         <div class="mobile-nav-actions">
-          <a href="loginRegister.html">
+          <a href="./loginRegister.html">
           <button class="icon-btn" data-ocid="header.login_button" aria-label="Login">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             Login / Register
-          </button></a>
-          <a href="404Page.html" class="btn btn-primary w-full" data-ocid="header.book_now_button">Book Now</a>
+          </button></a>  
         </div>
       </nav>
     </div>
-</header>
+  </header>
+
 <main>
- 
-  <section class="gear-detail-hero">
+
+  <section class="baby-shower-hero">
     <div class="container">
-      <div class="detail-header-wrap reveal-up">
-        <div class="post-meta-top">
-          <span class="cat-pill">Gear Review</span>
-          <span class="date-label">March 05, 2026</span>
+      <div class="detail-hero-layout">
+        <div class="detail-hero-content reveal-left">
+          <div class="section-tag">New Beginnings</div>
+          <h1 class="section-title">Baby Shower <br><span class="gradient-text">Celebration Shoots</span></h1>
+          <p class="section-subtitle">A baby shower is more than a party; it's the first chapter of a new story. Our studio provides a serene, luxury environment to capture the laughter, the details, and the glow of motherhood in a private, high-end setting.</p>
+          <div class="hero-amenities">
+            <div class="amenity-item"><span>✨</span> Themed Set Design</div>
+            <div class="amenity-item"><span>🍰</span> Catering Space</div>
+            <div class="amenity-item"><span>🤱</span> Private Nursing Room</div>
+          </div>
+          <div class="hero-action-group">
+            <a href="#booking" class="btn btn-primary btn-lg">Check Availability</a>
+            <div class="starting-price">Sessions from <strong>USD 350</strong></div>
+          </div>
         </div>
-        <h1 class="section-title">The 2026 Studio Trinity: <br><span class="gradient-text">Body, Glass, and Light</span></h1>
-        <p class="section-subtitle">We go deep into the technical specifications of the core kit available in all FrameSpace suites. Discover why these tools are the industry standard for high-end editorial production.</p>
-      </div>
-      
-      <div class="hero-gear-visual reveal-up">
-        <div class="gear-overlay-gradient"></div>
-        <img src="gear-pic.jpg" alt="Professional Camera Kit" class="main-gear-img">
-        <div class="floating-tech-specs">
-          <div class="tech-tag">Resolution: 61.0 MP</div>
-          <div class="tech-tag">Sync Speed: 1/250s</div>
-          <div class="tech-tag">Color: 16-bit RAW</div>
+        <div class="detail-hero-visual reveal-right">
+          <div class="dreamy-frame">
+            <div class="soft-glow-circle"></div>
+            <img src="baby shower hero.jpg" alt="Elegant Baby Shower Shoot" class="hero-main-img">
+            <div class="floating-stat-card">
+              <strong>4+</strong>
+              <span>Bespoke Themes</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="gear-bento-section" style="background: var(--bg-secondary);">
+  <section class="babyshower-experience" style="background: var(--bg-secondary);">
     <div class="container">
       <div class="section-header reveal-up">
-        <div class="section-tag">Specifications</div>
-        <h2 class="section-title">The Core Components</h2>
+        <div class="section-tag">The Experience</div>
+        <h2 class="section-title">A Sanctuary for Celebration</h2>
+        <p class="section-subtitle">We’ve designed our baby shower sessions to be as stress-free as they are beautiful.</p>
       </div>
 
-      <div class="gear-bento-grid">
-  
-        <div class="bento-item body-card reveal-left">
-          <div class="bento-img-wrap">
-            <img src="sony.webp" alt="Sony A7R V">
+      <div class="experience-grid">
+
+        <div class="exp-card reveal-up" style="--delay: 0.1s">
+          <div class="exp-img-wrap">
+            <img src="theme set.webp" alt="Themed Sets">
           </div>
-          <div class="bento-info">
-            <span class="item-label">The Body</span>
-            <h3>Sony A7R V</h3>
-            <p>Unrivaled detail with AI-driven autofocus. The backbone of our commercial production workflow.</p>
-            <div class="spec-tags">
-              <span>8K Video</span>
-              <span>8-Stop IBIS</span>
-            </div>
+          <div class="exp-body">
+            <div class="exp-icon">🌸</div>
+            <h3>Curated Themed Sets</h3>
+            <p>Choose from our "Boho Dream," "Classic Pastel," or "Minimalist Modern" sets. Our stylists handle the floral arrangements and prop setups before you arrive.</p>
+            <button class="btn-sm btn-primary w-full">View Themes</button>
           </div>
         </div>
 
-    
-        <div class="bento-item glass-card reveal-up">
-          <div class="bento-img-wrap">
-            <img src="glass.webp" alt="85mm Lens">
+        
+        <div class="exp-card reveal-up" style="--delay: 0.2s">
+          <div class="exp-img-wrap">
+            <img src="event-lounge.webp" alt="Private Lounge">
           </div>
-          <div class="bento-info">
-            <span class="item-label">The Glass</span>
-            <h3>85mm f/1.2 GM II</h3>
-            <p>Surgical sharpness with ethereal bokeh. The definitive choice for portraiture.</p>
+          <div class="exp-body">
+            <div class="exp-icon">🛋️</div>
+            <h3>Private Event Lounge</h3>
+            <p>A dedicated area for your guests to relax. Includes a refreshment bar, high-end furniture, and a climate-controlled environment for maximum comfort.</p>
+             <button class="btn-sm btn-primary w-full">Explore Lounge</button>
           </div>
         </div>
 
      
-        <div class="bento-item power-card reveal-right">
-          <div class="bento-img-wrap">
-            <img src="power.webp" alt="Profoto D2">
+        <div class="exp-card reveal-up" style="--delay: 0.3s">
+          <div class="exp-img-wrap">
+            <img src="baby-cinematic.webp" alt="Tech Support">
           </div>
-          <div class="bento-info">
-            <span class="item-label">The Power</span>
-            <h3>Profoto D2 1000W</h3>
-            <p>Freeze motion at 1/63,000s. Consistency that professional photographers trust.</p>
-            <button class="btn-sm btn-outline">View Lighting Guide</button>
+          <div class="exp-body">
+            <div class="exp-icon">📸</div>
+            <h3>Cinematic Production</h3>
+            <p>Our lighting techs use soft, flattering modifiers to ensure the mother-to-be looks radiant. Instant RAW tethering allows you to see the magic as it happens.</p>
+            <button class="btn-sm btn-primary w-full">Book Session</button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="gear-performance-section">
-    <div class="container">
-      <div class="performance-layout">
-        <div class="performance-content reveal-left">
-          <div class="section-tag">In Action</div>
-          <h2 class="section-title">Why it Matters <br>for Your Session</h2>
-          <p>Great gear doesn't just make images sharper; it makes the workflow faster. Our kit is integrated with high-speed fiber tethering, allowing you to see 61-megapixel files on a 27" Eizo monitor in under a second.</p>
-          
-          <div class="benefit-list">
-            <div class="benefit-item">
-              <strong>Zero Latency</strong>
-              <p>USB-C 3.2 tethering included in all rentals.</p>
-            </div>
-            <div class="benefit-item">
-              <strong>Pre-Calibrated</strong>
-              <p>Monitors matched to industry-standard print profiles.</p>
-            </div>
+      <div class="interactive-footer-cta reveal-up">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h2>Ready to capture the glow?</h2>
+            <p>Reserve your date today and get a complimentary 16x20 canvas print.</p>
           </div>
-
-          <div class="gear-cta-group">
-            <a href="contact.html" class="btn btn-primary btn-lg">Book the Full Kit</a>
-            <a href="services.html" class="btn btn-outline btn-lg">View Gear List</a>
-          </div>
-        </div>
-
-        <div class="performance-visual reveal-right">
-          <div class="action-frame">
-            <img src="photo-gear.webp" alt="Photographer using gear in studio" class="action-img hover-zoom">
-            <div class="overlay-stat">
-              <strong>99.9%</strong>
-              <span>Reliability Rate</span>
-            </div>
+          <div class="cta-actions">
+            <button class="btn btn-white">Download Price Guide</button>
+            <button class="btn btn-primary">Book Now</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 </main>
-<footer class="site-footer" id="contact">
+  <footer class="site-footer" id="contact">
     <div class="footer-top">
       <div class="container">
         <div class="footer-grid">
@@ -256,13 +213,17 @@
           <div class="footer-col">
             <h4 class="footer-heading">Quick Links</h4>
             <ul class="footer-links">
-              <li><a href="home.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-                    <li><a href="comingSoon.html">Coming Soon</a></li>
+              <li><a href="./home1.html">Home 1 </a></li>
+              <li><a href="./home2.html">Home 2</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+               <li><a href="./AdminDashboard.html">Dashboard</a></li>
             </ul>
           </div>
 
+  
           <div class="footer-col">
             <h4 class="footer-heading">Services</h4>
             <ul class="footer-links">
@@ -273,6 +234,13 @@
               <li><a href="#services">Retouching Suite</a></li>
               <li><a href="#services">Catering</a></li>
             </ul>
+            <div class="footer-col">
+            <h4 class="footer-heading">additional</h4>
+            <ul class="footer-links">
+              <li><a href="./comingSoon.html">Coming Soon</a></li>
+              <li><a href="./404Page.html">404</a></li>
+            </ul>
+          </div>
           </div>
 
           <div class="footer-col">
@@ -285,11 +253,11 @@
             <div class="footer-contact-info">
               <p>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                123 Studio Lane, Creative District
+              19/110,Madhapur,Hyderabad.
               </p>
               <p>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.95 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.89 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                +1 (555) 234-5678
+                +91 9876543210
               </p>
               <p>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -310,7 +278,20 @@
         </div>
       </div>
     </div>
-</footer>
-  <script src="Js/gear.js"></script>
+  </footer>
+  <script src="Js/babyShower.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
