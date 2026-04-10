@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameSpace Studio</title>
+  <link rel="stylesheet" href="Css/houseWarming.css" />
+</head>
+<body>
+    <header class="site-header" id="site-header">
+    <div class="header-inner">
+    
+      <a href="#home" class="logo" data-ocid="header.home_link">
+        <span class="logo-text">FrameSpace<span class="logo-accent">Studio</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-item">
+          <a href="home1.html" data-ocid="header.home_link" class="nav-link active">Home</a>
+          <div class="dropdown-menu">
+            <a href="home.html" class="dropdown-item">Home</a>
+          </div>
+        </div>
+        
+        <a href="about.html" data-ocid="header.studios_link" class="nav-link">About</a>
+         <div class="nav-item">
+          <a href="services.html" data-ocid="header.services_link" class="nav-link">Services</a>
+          <div class="dropdown-menu">
+            <a href="preWedding.html" class="dropdown-item">Pre-Wedding</a>
+            <a href="postWedding.html" class="dropdown-item">Post-Wedding</a>
+            <a href="wedding.html" class="dropdown-item">Wedding</a>
+            <a href="babyShower.html" class="dropdown-item">Baby Shower</a>
+            <a href="newbornMaternity.html" class="dropdown-item">Maternity</a>
+            <a href="newbornMaternity.html" class="dropdown-item">New Born</a>
+            <a href="birthdayShoot.html" class="dropdown-item">Birthday</a>
+            <a href="schoolFuntion.html" class="dropdown-item">School Function</a>
+            <a href="events.html" class="dropdown-item">Events</a>
+            <a href="portrait.html" class="dropdown-item">Portrait</a>
+            <a href="houseWarming.html" class="dropdown-item">House Warming</a>
+          </div>
+        </div>
+        
+        
+        <div class="nav-item">
+          <a href="blog.html" data-ocid="header.blog_link" class="nav-link ">Blog</a>
+          <div class="dropdown-menu">
+            <a href="lighting.html" class="dropdown-item">Lighting</a>
+             <a href="gear.html" class="dropdown-item">Gear</a>
+              <a href="creative.html" class="dropdown-item">Creative</a>
+               <a href="business.html" class="dropdown-item">Business</a>
+          </div>
+        </div>
+        <a href="contact.html" data-ocid="header.contact_link" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        
+        <button class="icon-btn theme-btn" id="themeToggle" data-ocid="header.theme_toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+<a href="loginRegister.html">
+        <button class="icon-btn" data-ocid="header.login_button" aria-label="Login or Register" title="Login / Register">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button></a>
+<a href="AdminDashboard.html">
+        <button class="icon-btn" data-ocid="header.admin_button" aria-label="Admin Dashboard" title="Admin Dashboard">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+          </svg>
+        </button></a>
+
+        <a href="#studios" class="btn btn-primary header-cta" data-ocid="header.book_now_button">Book Now</a>
+
+        <button class="hamburger" id="hamburgerBtn" data-ocid="header.hamburger_button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" data-ocid="header.mobile_menu" aria-hidden="true">
+      <nav>
+        <a href="home.html" data-ocid="header.home_link" class="mobile-nav-link">Home</a>
+        <a href="about.html" data-ocid="header.studios_link" class="mobile-nav-link">About</a>
+        <a href="services.html" data-ocid="header.services_link" class="mobile-nav-link">Services</a>
+        <a href="blog.html" data-ocid="header.pricing_link" class="mobile-nav-link">Blog</a>
+        <a href="contact.html" data-ocid="header.contact_link" class="mobile-nav-link">Contact</a>
+        <div class="mobile-nav-actions">
+          <a href="404Page.html">
+          <button class="icon-btn" data-ocid="header.login_button" aria-label="Login">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Login / Register
+          </button></a>
+          <a href="404Page.html" class="btn btn-primary w-full" data-ocid="header.book_now_button">Book Now</a>
+        </div>
+      </nav>
+    </div>
+</header>
+<main>
+  <section class="house-warming-hero">
+    <div class="container">
+      <div class="detail-hero-layout">
+        <div class="detail-hero-content reveal-left">
+          <div class="section-tag">New Beginnings</div>
+          <h1 class="section-title">House Warming <br><span class="gradient-text">Lifestyle Sessions</span></h1>
+          <p class="section-subtitle">A new home is a milestone of hard work and dreams realized. We specialize in documenting the warmth of your new space, the intricate architectural details, and the joyful moments of your first gathering with loved ones.</p>
+          
+          <div class="hero-amenities-grid">
+            <div class="amenity-box">
+              <span class="a-icon">🔑</span>
+              <p>Architectural Focus</p>
+            </div>
+            <div class="amenity-box">
+              <span class="a-icon">🥂</span>
+              <p>Candid Socials</p>
+            </div>
+            <div class="amenity-box">
+              <span class="a-icon">🏡</span>
+              <p>Drone Coverage</p>
+            </div>
+          </div>
+
+          <div class="hero-action-group">
+            <a href="#contact" class="btn btn-primary btn-lg">Request Custom Quote</a>
+            <div class="starting-price">On-Location from <strong>USD 300</strong></div>
+          </div>
+        </div>
+        <div class="detail-hero-visual reveal-right">
+          <div class="home-visual-frame">
+            <div class="window-pane-overlay"></div>
+            <img src="house-warming.webp" alt="Beautiful Home Interior" class="hero-home-img">
+            <div class="floating-welcome-card">
+              <h4>Welcome Home</h4>
+              <p>Capturing the soul of your sanctuary.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="house-warming-experience" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">The Story</div>
+        <h2 class="section-title">Documenting Your Sanctuary</h2>
+        <p class="section-subtitle">Our approach combines architectural photography with lifestyle candids to tell the complete story of your new home.</p>
+      </div>
+
+      <div class="experience-grid">
+      
+        <div class="exp-card reveal-up" style="--delay: 0.1s">
+          <div class="exp-img-wrap">
+            <img src="architecture.webp" alt="Interior Details">
+            <div class="exp-overlay-tag">The Details</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-icon">📐</div>
+            <h3>Architectural Nuance</h3>
+            <p>We capture the unique design elements of your home—the textures, the light play in the hallways, and the craftsmanship that makes your space unique.</p>
+            <ul class="exp-list">
+              <li> Wide-angle interior shots</li>
+              <li> Macro detail photography</li>
+              <li> HDR lighting techniques</li>
+            </ul>
+          </div>
+        </div>
+
+        
+        <div class="exp-card reveal-up" style="--delay: 0.2s">
+          <div class="exp-img-wrap">
+            <img src="candid.webp" alt="Family Gathering">
+            <div class="exp-overlay-tag">The Life</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-icon">👨‍👩‍👧‍👦</div>
+            <h3>Candid Milestone Moments</h3>
+            <p>The laughter during the first toast and the warmth of family gathered in your kitchen. We document the human element that turns a house into a home.</p>
+            <ul class="exp-list">
+              <li> Natural light candids</li>
+              <li> Group family portraits</li>
+              <li> Unobtrusive documentary style</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card reveal-up" style="--delay: 0.3s">
+          <div class="exp-img-wrap">
+            <img src="aerial.webp" alt="Drone View">
+            <div class="exp-overlay-tag">The Scale</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-icon">🚁</div>
+            <h3>Aerial & Exterior</h3>
+            <p>Showcase the full scale of your property. Our FAA-certified drone pilots capture stunning aerial views of your home and its surroundings.</p>
+            <ul class="exp-list">
+              <li> 4K Aerial Stills</li>
+              <li> Landscape integration</li>
+              <li> Sunset/Golden hour timing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="home-cta-box reveal-up">
+        <div class="cta-inner">
+          <div class="cta-content">
+            <h2>Preserve Your First Memories</h2>
+            <p>Every booking includes a custom-designed "Homecoming" photo book for your coffee table.</p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn btn-outline">View Sample Album</button>
+            <button class="btn btn-primary">Book Your Session</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer" id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+    
+          <div class="footer-col footer-brand">
+            <a href="#home" class="footer-logo">
+              <div class="logo-icon">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.15"/>
+                  <path d="M6 11C6 9.9 6.9 9 8 9h2.5l1.5-2h8l1.5 2H24c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <span>FrameSpace<span style="color: var(--brand-accent)">Studio</span></span>
+            </a>
+            <p class="footer-tagline">Your perfect shot starts here. Professional spaces, premium equipment, endless possibilities.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter/X">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+                    <li><a href="comingSoon.html">Coming Soon</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Studio Lighting</a></li>
+              <li><a href="#services">Backdrop Collection</a></li>
+              <li><a href="#services">Equipment Rental</a></li>
+              <li><a href="#services">Makeup &amp; Styling</a></li>
+              <li><a href="#services">Retouching Suite</a></li>
+              <li><a href="#services">Catering</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Stay Updated</h4>
+            <p class="footer-newsletter-text">Subscribe to our newsletter for studio updates, deals and photography tips.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+              <input type="email" placeholder="your@email.com" class="newsletter-input" data-ocid="footer.email_input" aria-label="Email for newsletter" />
+              <button type="submit" class="btn btn-primary newsletter-btn" data-ocid="footer.subscribe_button">Subscribe</button>
+            </form>
+            <div class="footer-contact-info">
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                123 Studio Lane, Creative District
+              </p>
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.95 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.89 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +1 (555) 234-5678
+              </p>
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                hello@framespacestudio.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="footerYear"></span> FrameSpace Studio. Built with ♥ using for Photoshoot</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+</footer>
+  <script src="Js/houseWarming.js"></script>
+</body>
+</html>

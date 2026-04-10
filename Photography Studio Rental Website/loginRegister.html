@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | FrameSpace Studio</title>
+    <!-- Font Awesome for Social Logos & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --brand-primary: #C8973A;
+            --brand-glow: rgba(37, 99, 235, 0.15);
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --border-color: #e2e8f0;
+            --input-bg: #f1f5f9;
+            --error-red: #ef4444;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --bg-body: #0f172a;
+            --bg-card: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: #334155;
+            --input-bg: #0f172a;
+        }
+
+        /* RTL Support */
+        [dir="rtl"] .top-actions { left: 1.5rem; right: auto; }
+        [dir="rtl"] .eye-icon { left: 1rem; right: auto; }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden; /* No scrolling requirement */
+            background-color: var(--bg-body);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+
+        .auth-card {
+            background: var(--bg-card);
+            width: 100%;
+            max-width: 440px;
+            border-radius: 24px;
+            padding: 2.5rem;
+            position: relative;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        /* Top-right corner icons */
+        .top-actions {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .icon-btn {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .icon-btn:hover {
+            color: var(--brand-primary);
+            border-color: var(--brand-primary);
+        }
+
+        /* Logo inside card */
+        .logo-box {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .logo-text {
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: -0.025em;
+            color: var(--brand-primary);
+        }
+
+        .header-content {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .header-content h1 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        .header-content p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Vertical Input Arrangement */
+        .form-group {
+            margin-bottom: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .form-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .input-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background: var(--input-bg);
+            color: var(--text-primary);
+            outline: none;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-input:focus {
+            border-color: var(--brand-primary);
+            box-shadow: 0 0 0 4px var(--brand-glow);
+        }
+
+        .eye-icon {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: color 0.3s;
+        }
+        .eye-icon:hover { color: var(--brand-primary); }
+
+        /* Error States */
+        .form-group.error .form-input { border-color: var(--error-red); }
+        .error-text {
+            color: var(--error-red);
+            font-size: 0.75rem;
+            margin-top: 0.4rem;
+            display: none;
+        }
+        .form-group.error .error-text { display: block; }
+
+        /* Remember & Forgot on same line */
+        .form-utils {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .remember-wrap {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+        .forgot-link {
+            font-size: 0.85rem;
+            color: var(--brand-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* CTA width matches inputs */
+        .btn-submit {
+            width: 100%;
+            padding: 0.9rem;
+            border-radius: 12px;
+            border: none;
+            background: var(--brand-primary);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
+        .btn-submit:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 1.5rem 0;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .divider::before, .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+            margin: 0 1rem;
+        }
+
+        /* Social Options */
+        .social-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .btn-social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--bg-card);
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .btn-social:hover {
+            background: var(--input-bg);
+            border-color: var(--text-muted);
+        }
+
+        .signup-footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        .signup-footer a {
+            color: var(--brand-primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        /* Responsive Breakpoints */
+        /* 1024px Desktop */
+        @media (min-width: 1024px) {
+            .auth-card { max-width: 440px; }
+        }
+
+        /* 768px Tablet */
+        @media (max-width: 768px) {
+            .auth-card { max-width: 400px; padding: 2rem; }
+        }
+
+        /* 320px Mobile */
+        @media (max-width: 320px) {
+            body { align-items: flex-start; }
+            .auth-card {
+                max-width: 100%;
+                height: 100vh;
+                border-radius: 0;
+                padding: 1.5rem 1rem;
+                border: none;
+            }
+            .social-grid { grid-template-columns: 1fr; }
+            .header-content h1 { font-size: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+<main class="auth-card">
+    <!-- Top Right Icons -->
+    <div class="top-actions">
+        <button class="icon-btn" id="rtlToggle" title="Toggle RTL">
+            <i class="fas fa-language"></i>
+        </button>
+        <button class="icon-btn" id="themeToggle" title="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Logo Inside Card -->
+    <div class="logo-box">
+        <span class="logo-text">FRAMESPACE</span>
+    </div>
+
+    <div class="header-content">
+        <h1>Welcome Back</h1>
+        <p>Enter your credentials to access your account</p>
+    </div>
+
+    <form id="loginForm" novalidate>
+        <!-- Vertical Arrangement -->
+        <div class="form-group" id="emailGroup">
+            <label for="email">Email Address</label>
+            <div class="input-container">
+                <input type="email" id="email" class="form-input" placeholder="name@company.com" required>
+            </div>
+            <span class="error-text">Please enter a valid email address.</span>
+        </div>
+
+        <div class="form-group" id="passGroup">
+            <label for="password">Password</label>
+            <div class="input-container">
+                <input type="password" id="password" class="form-input" placeholder="••••••••" required minlength="6">
+                <i class="fas fa-eye eye-icon" id="togglePassword"></i>
+            </div>
+            <span class="error-text">Password must be at least 6 characters.</span>
+        </div>
+
+        <!-- Remember & Forgot on same line -->
+        <div class="form-utils">
+            <label class="remember-wrap">
+                <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot Password?</a>
+        </div>
+
+        <!-- CTA width matches inputs -->
+        <button type="submit" class="btn-submit">Sign In</button>
+    </form>
+
+    <div class="divider">Or continue with</div>
+
+    <div class="social-grid">
+        <button class="btn-social">
+            <i class="fab fa-google" style="color: #DB4437;"></i> Google
+        </button>
+        <button class="btn-social">
+            <i class="fab fa-apple"></i> Apple
+        </button>
+    </div>
+
+    <div class="signup-footer">
+        New here? <a href="./register.html">Create an account</a>
+    </div>
+</main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const loginForm = document.getElementById('loginForm');
+        const themeToggle = document.getElementById('themeToggle');
+        const rtlToggle = document.getElementById('rtlToggle');
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+
+        // Dark Mode Logic
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            themeToggle.querySelector('i').className = newTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        });
+
+        // RTL Logic
+        rtlToggle.addEventListener('click', () => {
+            const currentDir = document.documentElement.getAttribute('dir');
+            document.documentElement.setAttribute('dir', currentDir === 'rtl' ? 'ltr' : 'rtl');
+        });
+
+        // Password Visibility
+        togglePassword.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            togglePassword.classList.toggle('fa-eye-slash');
+        });
+
+        // Validation Logic
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let isValid = true;
+
+            const email = document.getElementById('email');
+            const emailGroup = document.getElementById('emailGroup');
+            const passGroup = document.getElementById('passGroup');
+
+            // Simple Email Regex
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(email.value)) {
+                emailGroup.classList.add('error');
+                isValid = false;
+            } else {
+                emailGroup.classList.remove('error');
+            }
+
+            if (passwordInput.value.length < 6) {
+                passGroup.classList.add('error');
+                isValid = false;
+            } else {
+                passGroup.classList.remove('error');
+            }
+
+            if (isValid) {
+                const btn = loginForm.querySelector('.btn-submit');
+                btn.innerText = "Signing in...";
+                btn.style.opacity = "0.7";
+                setTimeout(() => {
+                    alert('Login Successful!');
+                    btn.innerText = "Sign In";
+                    btn.style.opacity = "1";
+                }, 1500);
+            }
+        });
+
+        // Clear error on input
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('input', () => {
+                input.closest('.form-group').classList.remove('error');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

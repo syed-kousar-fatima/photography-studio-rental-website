@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameSpace Studio</title>
+    <link rel="stylesheet" href="Css/home.css">
+    <link rel="icon" href="./logo.jpg" type="image/x-icon">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo" data-ocid="header.home_link">
+        <img src="./logo.jpg" style="height:40px;width:auto;object-fit:contain;">
+        <span class="logo-text">FrameSpace<span class="logo-accent">Studio</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-item">
+          <a href="home1.html" data-ocid="header.home_link" class="nav-link active">Home</a>
+          <div class="dropdown-menu">
+            <a href="./home1.html" class="dropdown-item">Home 1</a>
+             <a href="./home2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </div>
+        <a href="about.html" data-ocid="header.studios_link" class="nav-link">About</a>
+     
+          <a href="services.html" data-ocid="header.services_link" class="nav-link">Services</a>
+       
+          <a href="blog.html" data-ocid="header.blog_link" class="nav-link ">Blog</a>
+        <a href="contact.html" data-ocid="header.contact_link" class="nav-link">Contact</a>
+         <a href="./AdminDashboard.html" data-ocid="header.AdminDashboard" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="header-actions">
+        
+        <button class="icon-btn theme-btn" id="themeToggle" data-ocid="header.theme_toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+<button class="icon-btn rtl-btn" id="rtlToggle"
+  aria-label="Toggle RTL/LTR" title="Toggle RTL">
+  <span class="rtl-text">LTR</span>
+</button>
+       
+        
+  <a href="./loginRegister.html" class="btn btn-primary header-cta" data-ocid="header.sign_up_button">Sign Up</a>
+        <a href="./contact.html" class="btn btn-outline-white btn-lg header-cta" data-ocid="header.book_now_button" style="color: var(--brand-accent);">Book Now</a>
+        <button class="hamburger" id="hamburgerBtn" data-ocid="header.hamburger_button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+      </div>
+    </div>
+
+ 
+    <div class="mobile-nav" id="mobileNav" data-ocid="header.mobile_menu" aria-hidden="true">
+      <nav>
+        <a href="./home1.html" data-ocid="header.home_link" class="mobile-nav-link">Home 1</a>
+        <a href="./home.html" data-ocid="header.home_link" class="mobile-nav-link">Home 2</a>
+        <a href="about.html" data-ocid="header.studios_link" class="mobile-nav-link">About</a>
+        <a href="services.html" data-ocid="header.services_link" class="mobile-nav-link">Services</a>
+        <a href="blog.html" data-ocid="header.pricing_link" class="mobile-nav-link">Blog</a>
+        <a href="contact.html" data-ocid="header.contact_link" class="mobile-nav-link">Contact</a>
+        <a href="./AdminDashboard.html" data-ocid="header.AdminDashboard" class="mobile-nav-link">Admin Dashboard</a>
+        <div class="mobile-nav-actions">
+          <a href="./loginRegister.html">
+          <button class="icon-btn" data-ocid="header.login_button" aria-label="Login">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Login / Register
+          </button></a>  
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+  <section class="hero-slideshow" id="home">
+    <div class="slides-container">
+      <div class="slide active">
+        <img src="natural.jpg" alt="Natural Light Studio" class="slide-img">
+      </div>
+      <div class="slide">
+        <img src="dramatic.webp" alt="Dramatic Noir Suite" class="slide-img">
+      </div>
+      <div class="slide">
+        <img src="industrial loft.jpg" alt="Industrial Loft" class="slide-img">
+      </div>
+      <div class="slide">
+        <img src="beauty.jpg" alt="Product Cyclorama" class="slide-img">
+      </div>
+    </div>
+
+    <div class="hero-content reveal-up">
+      <h1 class="hero-headline"><span class="gradient-text">Mastering Light</span><br>Defining Your Vision</h1>
+      <p class="hero-subtext">The city's premier multi-concept production environment for high-end photography and cinematic arts.</p>
+      <div class="hero-ctas">
+        <a href="#booking" class="btn btn-primary btn-lg">Book Your Session</a>
+        <a href="#experience" class="btn btn-outline-white btn-lg">Explore Suites</a>
+      </div>
+    </div>
+
+    <div class="slideshow-dots" id="heroDots">
+      <button class="dot active" data-index="0"></button>
+      <button class="dot" data-index="1"></button>
+      <button class="dot" data-index="2"></button>
+      <button class="dot" data-index="3"></button>
+    </div>
+  </section>
+
+  
+  <section class="experience-tabs-section" id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">The Spaces</div>
+        <h2 class="section-title">Studio Experiences</h2>
+      </div>
+
+      <div class="tabs-nav reveal-up">
+        <button class="tab-btn active" data-target="natural">Natural Light</button>
+        <button class="tab-btn" data-target="dramatic">Dramatic</button>
+        <button class="tab-btn" data-target="industrial">Industrial</button>
+        <button class="tab-btn" data-target="product">Product</button>
+      </div>
+
+      <div class="tab-content-wrap">
+        <div class="tab-pane active" id="natural">
+          <div class="tab-grid">
+            <div class="tab-collage reveal-left">
+              <img src="h1.webp" class="c-main" alt="">
+              <img src="h2.webp" class="c-sub" alt="">
+              <img src="h3.webp" class="c-sub" alt="">
+            </div>
+            <div class="tab-info reveal-right">
+              <h3>The Luminary Suite</h3>
+              <p>Flooded with soft, diffused daylight from 20ft floor-to-ceiling windows. Ideal for lifestyle, bridal, and minimalist editorial work.</p>
+              <div class="specs-grid">
+                <div class="spec"><h4>Area</h4><strong>1,200 sq ft</strong></div>
+                <div class="spec"><h4>Lighting</h4><strong>North Facing</strong></div>
+                <div class="spec"><h4>Ceiling</h4><strong>14ft High</strong></div>
+                <div class="spec"><h4>Floor</h4><strong>Polished Oak</strong></div>
+              </div>
+              <a href="./contact.html" class="btn btn-primary">Book This Suite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="packages-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag light">Production Rates</div>
+        <h2 class="section-title" >Flexible Packages</h2>
+      </div>
+      <div class="packages-grid">
+       
+        <div class="pkg-card reveal-up" style="--delay: 0.1s">
+          <div class="pkg-header">
+            <h3>Solo Starter</h3>
+            <div class="pkg-price">USD 150</div>
+            <span class="pkg-duration">2 Hours</span>
+          </div>
+          <ul class="pkg-list">
+            <li> Single Concept Access</li>
+            <li> Basic Grip Kit</li>
+            <li> 1 Seamless Backdrop</li>
+             <li> Assistant not included</li>
+          </ul>
+          <button class="btn btn-primary w-full">Book Now</button>
+        </div>
+      
+        <div class="pkg-card featured reveal-up" style="--delay: 0.2s">
+          <div class="best-value-badge">Best Value</div>
+          <div class="pkg-header">
+            <h3>Pro Producer</h3>
+            <div class="pkg-price">USD 380</div>
+            <span class="pkg-duration">5 Hours</span>
+          </div>
+          <ul class="pkg-list">
+            <li> Dual Concept Access</li>
+            <li> Full Profoto Kit</li>
+            <li> Private Makeup Suite</li>
+            <li> Assistant Included</li>
+          </ul>
+          <button class="btn btn-primary w-full">Book Now</button>
+        </div>
+    
+        <div class="pkg-card reveal-up" style="--delay: 0.3s">
+            <div class="pkg-header">
+              <h3>Agency Day</h3>
+              <div class="pkg-price">USD 850</div>
+              <span class="pkg-duration">10 Hours</span>
+            </div>
+            <ul class="pkg-list">
+              <li> All Concept Access</li>
+              <li> Digital Tech Support</li>
+              <li> Full Catering Service</li>
+              <li> High-Speed Fiber</li>
+            </ul>
+          <button class="btn btn-primary w-full">Book Now</button>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bts-section">
+    <div class="container">
+      <div class="bts-layout">
+        <div class="bts-content reveal-left">
+          <div class="section-tag">Our Workflow</div>
+          <h2 class="section-title">Built for Performance</h2>
+          <div class="bts-features">
+            <div class="bts-item">
+              <h4>Instant Tethering</h4>
+              <p>High-speed fiber connectivity to client monitors in every lounge.</p>
+            </div>
+            <div class="bts-item">
+              <h4>Silent HVAC</h4>
+              <p>Industrial-grade climate control designed for sound-sensitive video.</p>
+            </div>
+            <div class="bts-item">
+              <h4>Advanced Rigging</h4>
+              <p>Overhead rail systems for effortless lighting placement.</p>
+            </div>
+            <div class="bts-item">
+              <h4>Grip Library</h4>
+              <p>Extensive range of C-stands, modifiers, and flags included.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bts-visual reveal-right">
+          <div class="asymmetric-collage">
+            <img src="discuss.webp" alt="BTS" class="zoom-hover">
+            <img src="grib.webp" alt="BTS" class="zoom-hover">
+            <img src="monitor.webp" alt="BTS" class="zoom-hover">
+            <img src="rail system.webp" alt="BTS" class="zoom-hover">
+            <img src="sound.webp" alt="BTS" class="zoom-hover">
+            <img src="studio.webp" alt="BTS" class="zoom-hover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  
+  <section class="portfolio-strip-wrap">
+    <div class="strip-controls">
+      <button id="stripPrev" class="strip-arrow">←</button>
+      <button id="stripNext" class="strip-arrow">→</button>
+    </div>
+    <div class="portfolio-strip" id="portfolioStrip">
+      <div class="strip-item"><img src="edit.webp" alt=""><div class="strip-label">Editorial</div></div>
+      <div class="strip-item"><img src="commercial.webp" alt=""><div class="strip-label">Commercial</div></div>
+      <div class="strip-item"><img src="fashion1.webp" alt=""><div class="strip-label">Fashion</div></div>
+      <div class="strip-item"><img src="product1.webp" alt=""><div class="strip-label">Product</div></div>
+      <div class="strip-item"><img src="portrait.webp" alt=""><div class="strip-label">Portrait</div></div>
+      <div class="strip-item"><img src="beauty.webp" alt=""><div class="strip-label">Beauty</div></div>
+      <div class="strip-item"><img src="minimal.webp" alt=""><div class="strip-label">Minimal</div></div>
+      <div class="strip-item"><img src="cinematic.webp" alt=""><div class="strip-label">Cinematic</div></div>
+    </div>
+  </section>
+
+  
+  <section class="blog-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Journal</div>
+        <h2 class="section-title">Latest Insights</h2>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card wide reveal-up">
+          <img src="masterclass.webp" alt="">
+          <div class="blog-body">
+            <span class="cat-badge">Masterclass</span>
+            <h3>Mastering Low-Key Lighting for Luxury Editorial</h3>
+            <p>Learn the secrets of shadow manipulation in our dramatic suites.</p>
+            <div class="blog-meta"><span>8 min read</span><a href="#">Read More →</a></div>
+          </div>
+        </article>
+   
+        <article class="blog-card reveal-up" style="--delay: 0.1s">
+            <img src="gear.webp" alt="">
+            <div class="blog-body">
+              <span class="cat-badge">Gear</span>
+              <h4>Choosing the Right Softbox</h4>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section" id="booking">
+    <div class="container">
+      <div class="booking-wrapper reveal-up">
+        <div class="booking-info">
+          <h2 class="section-title" style="color: white;">Reserve Your Date</h2>
+          <p>Join the community of elite creators at FrameSpace Studio.</p>
+          <ul class="trust-checklist">
+            <li> Instant confirmation for Pro members</li>
+            <li> Technical assistance on-call</li>
+            <li> Secure payment processing</li>
+          </ul>
+        </div>
+        <form class="booking-form-box" id="mainBookingForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Select Suite</label>
+              <select class="booking-input">
+                <option>Luminary Suite (Natural)</option>
+                <option>Eclipse Suite (Dramatic)</option>
+                <option>Loft 22 (Industrial)</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Date</label><input type="date" class="booking-input"></div>
+            <div class="form-group"><label>Start Time</label><input type="time" class="booking-input"></div>
+            <div class="form-group"><label>Duration</label><select class="booking-input"><option>2 Hours</option><option>4 Hours</option><option>Full Day</option></select></div>
+          </div>
+          <textarea class="booking-input" rows="3" placeholder="Equipment requests or session notes..."></textarea>
+          <button type="submit" class="btn btn-primary btn-lg w-full" style="margin-top: 2rem;">Request Booking</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+  <footer class="site-footer" id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+    
+          <div class="footer-col footer-brand">
+            <a href="#home" class="footer-logo">
+              <div class="logo-icon">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.15"/>
+                  <path d="M6 11C6 9.9 6.9 9 8 9h2.5l1.5-2h8l1.5 2H24c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <span>FrameSpace<span style="color: var(--brand-accent)">Studio</span></span>
+            </a>
+            <p class="footer-tagline">Your perfect shot starts here. Professional spaces, premium equipment, endless possibilities.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter/X">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="./home1.html">Home 1 </a></li>
+              <li><a href="./home2.html">Home 2</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+               <li><a href="./AdminDashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+
+  
+          <div class="footer-col">
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Studio Lighting</a></li>
+              <li><a href="#services">Backdrop Collection</a></li>
+              <li><a href="#services">Equipment Rental</a></li>
+              <li><a href="#services">Makeup &amp; Styling</a></li>
+              <li><a href="#services">Retouching Suite</a></li>
+              <li><a href="#services">Catering</a></li>
+            </ul>
+            <div class="footer-col">
+            <h4 class="footer-heading">additional</h4>
+            <ul class="footer-links">
+              <li><a href="./comingSoon.html">Coming Soon</a></li>
+              <li><a href="./404Page.html">404</a></li>
+            </ul>
+          </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Stay Updated</h4>
+            <p class="footer-newsletter-text">Subscribe to our newsletter for studio updates, deals and photography tips.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+              <input type="email" placeholder="your@email.com" class="newsletter-input" data-ocid="footer.email_input" aria-label="Email for newsletter" />
+              <button type="submit" class="btn btn-primary newsletter-btn" data-ocid="footer.subscribe_button">Subscribe</button>
+            </form>
+            <div class="footer-contact-info">
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              19/110,Madhapur,Hyderabad.
+              </p>
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.95 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.89 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +91 9876543210
+              </p>
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                hello@framespacestudio.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="footerYear"></span> FrameSpace Studio. Built with ♥ using for Photoshoot</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="Js/home.js"></script>
+</body>
+</html>

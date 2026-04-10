@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameSpace Studio</title>
+    <link rel="stylesheet" href="Css/service.css">
+    <link rel="icon" href="./logo.jpg" type="image/x-icon">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo" data-ocid="header.home_link">
+        <img src="./logo.jpg" style="height:40px;width:auto;object-fit:contain;">
+        <span class="logo-text">FrameSpace<span class="logo-accent">Studio</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-item">
+          <a href="home1.html" data-ocid="header.home_link" class="nav-link ">Home</a>
+          <div class="dropdown-menu">
+            <a href="./home1.html" class="dropdown-item">Home 1</a>
+             <a href="./home2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </div>
+        <a href="about.html" data-ocid="header.studios_link" class="nav-link">About</a>
+     
+          <a href="services.html" data-ocid="header.services_link" class="nav-link active">Services</a>
+       
+          <a href="blog.html" data-ocid="header.blog_link" class="nav-link ">Blog</a>
+        <a href="contact.html" data-ocid="header.contact_link" class="nav-link">Contact</a>
+         <a href="./AdminDashboard.html" data-ocid="header.AdminDashboard" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="header-actions">
+        
+        <button class="icon-btn theme-btn" id="themeToggle" data-ocid="header.theme_toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+<button class="icon-btn rtl-btn" id="rtlToggle"
+  aria-label="Toggle RTL/LTR" title="Toggle RTL">
+  <span class="rtl-text">LTR</span>
+</button>
+       
+        
+  <a href="./loginRegister.html" class="btn btn-primary header-cta" data-ocid="header.sign_up_button">Sign Up</a>
+        <a href="./contact.html" class="btn btn-outline-white btn-lg header-cta" data-ocid="header.book_now_button" style="color: var(--brand-accent);">Book Now</a>
+        <button class="hamburger" id="hamburgerBtn" data-ocid="header.hamburger_button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+      </div>
+    </div>
+
+ 
+    <div class="mobile-nav" id="mobileNav" data-ocid="header.mobile_menu" aria-hidden="true">
+      <nav>
+        <a href="./home1.html" data-ocid="header.home_link" class="mobile-nav-link">Home 1</a>
+        <a href="./home.html" data-ocid="header.home_link" class="mobile-nav-link">Home 2</a>
+        <a href="about.html" data-ocid="header.studios_link" class="mobile-nav-link">About</a>
+        <a href="services.html" data-ocid="header.services_link" class="mobile-nav-link">Services</a>
+        <a href="blog.html" data-ocid="header.pricing_link" class="mobile-nav-link">Blog</a>
+        <a href="contact.html" data-ocid="header.contact_link" class="mobile-nav-link">Contact</a>
+        <a href="./AdminDashboard.html" data-ocid="header.AdminDashboard" class="mobile-nav-link">Admin Dashboard</a>
+        <div class="mobile-nav-actions">
+          <a href="./loginRegister.html">
+          <button class="icon-btn" data-ocid="header.login_button" aria-label="Login">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Login / Register
+          </button></a>  
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <section class="services-hero">
+    <div class="container">
+      <div class="hero-content reveal-up">
+        <div class="section-tag">Premium Production</div>
+        <h1 class="section-title">Defining the Art of <br><span class="gradient-text">Visual Storytelling</span></h1>
+        <p class="section-subtitle">From intimate newborn sessions to grand wedding productions, we provide the architecture, equipment, and expertise to capture every milestone with cinematic precision.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialized-services" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Milestone Capturing</div>
+        <h2 class="section-title">Specialized Shoot Concepts</h2>
+      </div>
+
+      <div class="service-bento-grid reveal-up">
+        
+        <div class="service-card tall" style="background-image: url('pre-wedding.jpg');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>Pre-Wedding</h3>
+              <p>Romantic cinematic sets built for your love story.</p>
+            </div>
+            <a href="preWedding.html" class="service-btn">Book Pre-Wedding</a>
+          </div>
+        </div>
+
+      
+        <div class="service-card wide" style="background-image: url('wedding.webp');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>Grand Wedding</h3>
+              <p>Full-scale coverage for your most significant day.</p>
+            </div>
+            <a href="wedding.html" class="service-btn">Inquire Now</a>
+          </div>
+        </div>
+
+       
+        <div class="service-card" style="background-image: url('maternity.webp');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>Maternity</h3>
+              <p>Soft lighting and elegant silhouettes.</p>
+            </div>
+            <a href="newbornMaternity.html" class="service-btn">Book Maternity</a>
+          </div>
+        </div>
+
+        <div class="service-card" style="background-image: url('newborn.webp');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>Newborn</h3>
+              <p>Cozy, safe environments for the little ones.</p>
+            </div>
+            <a href="newbornMaternity.html" class="service-btn">Book Newborn</a>
+          </div>
+        </div>
+
+     
+        <div class="service-card" style="background-image: url('baby-shower.webp');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>Baby Shower</h3>
+              <p>Capturing the joy of new beginnings.</p>
+            </div>
+            <a href="babyShower.html" class="service-btn">Book Session</a>
+          </div>
+        </div>
+
+    
+        <div class="service-card tall" style="background-image: url('birthday.jpg');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>Birthday Shoot</h3>
+              <p>Vibrant, high-energy sets for all ages.</p>
+            </div>
+            <a href="birthdayShoot.html" class="service-btn">Book Birthday</a>
+          </div>
+        </div>
+
+     
+        <div class="service-card" style="background-image: url('portrait-services.webp');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>Professional Portrait</h3>
+              <p>Editorial headshots and corporate branding.</p>
+            </div>
+            <a href="portrait.html" class="service-btn">Book Portrait</a>
+          </div>
+        </div>
+
+       
+        <div class="service-card" style="background-image: url('post-wedding.webp');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>Post-Wedding</h3>
+              <p>Artistic sessions without the wedding day rush.</p>
+            </div>
+            <a href="postWedding.html" class="service-btn">Book Session</a>
+          </div>
+        </div>
+
+        <div class="service-card" style="background-image: url('house-warming.webp');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>House Warming</h3>
+              <p>Capturing the warmth of your new home.</p>
+            </div>
+            <a href="houseWarming.html" class="service-btn">Book Event</a>
+          </div>
+        </div>
+
+  
+        <div class="service-card wide" style="background-image: url('events.jpg');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>Events & Galas</h3>
+              <p>Professional coverage for corporate and social events.</p>
+            </div>
+            <a href="events.html" class="service-btn">Book Event</a>
+          </div>
+        </div>
+
+        <div class="service-card" style="background-image: url('school.webp');">
+          <div class="service-overlay">
+            <div class="service-meta">
+              <h3>School Functions</h3>
+              <p>Capturing academic milestones and celebrations.</p>
+            </div>
+            <a href="schoolFuntion.html" class="service-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offerings-section">
+    <div class="container">
+      <div class="offerings-layout">
+        <div class="offerings-visual reveal-left">
+          <div class="visual-stack">
+            <img src="tech-support.jpg" alt="Tech Support" class="hover-float">
+            <div class="experience-badge">10+ Years Experience</div>
+          </div>
+        </div>
+        <div class="offerings-content reveal-right">
+          <div class="section-tag">Our Value</div>
+          <h2 class="section-title">The FrameSpace Advantage</h2>
+          <p>We provide more than just four walls. Our business is built on providing the technical foundation for your creative success.</p>
+          
+          <div class="offering-item">
+            <div class="offering-icon">💡</div>
+            <div class="offering-text">
+              <h4>Lighting Assistance</h4>
+              <p>On-call technicians to help you build complex lighting diagrams.</p>
+            </div>
+          </div>
+
+          <div class="offering-item">
+            <div class="offering-icon">🖥️</div>
+            <div class="offering-text">
+              <h4>Digital Capture Suite</h4>
+              <p>High-speed tethering with iMac Pro workstations in every studio.</p>
+            </div>
+          </div>
+
+          <div class="offering-item">
+            <div class="offering-icon">🎬</div>
+            <div class="offering-text">
+              <h4>Set Construction</h4>
+              <p>In-house build team for custom flats, flooring, and prop creation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="gear-section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Rental Catalog</div>
+        <h2 class="section-title">In-House Equipment</h2>
+      </div>
+
+      <div class="gear-grid reveal-up">
+  
+        <div class="gear-card">
+          <div class="gear-thumb">📸</div>
+          <div class="gear-info">
+            <span class="gear-cat">Camera</span>
+            <h4>Sony A7R V (61MP)</h4>
+            <div class="gear-price">USD 85 / Day</div>
+            <button class="btn btn-sm btn-primary w-full">Add to Session</button>
+          </div>
+        </div>
+
+        <div class="gear-card">
+          <div class="gear-thumb">💡</div>
+          <div class="gear-info">
+            <span class="gear-cat">Lighting</span>
+            <h4>Profoto D2 1000 AirTTL</h4>
+            <div class="gear-price">USD 45 / Day</div>
+            <button class="btn btn-sm btn-primary w-full">Add to Session</button>
+          </div>
+        </div>
+
+     
+        <div class="gear-card">
+          <div class="gear-thumb">🔭</div>
+          <div class="gear-info">
+            <span class="gear-cat">Lens</span>
+            <h4>85mm f/1.2 GM II</h4>
+            <div class="gear-price">USD 35 / Day</div>
+            <button class="btn btn-sm btn-primary w-full">Add to Session</button>
+          </div>
+        </div>
+
+   
+        <div class="gear-card">
+          <div class="gear-thumb">🖥️</div>
+          <div class="gear-info">
+            <span class="gear-cat">Digital</span>
+            <h4>Eizo ColorEdge 27"</h4>
+            <div class="gear-price">USD 50 / Day</div>
+            <button class="btn btn-sm btn-primary w-full">Add to Session</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+  <footer class="site-footer" id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+    
+          <div class="footer-col footer-brand">
+            <a href="#home" class="footer-logo">
+              <div class="logo-icon">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.15"/>
+                  <path d="M6 11C6 9.9 6.9 9 8 9h2.5l1.5-2h8l1.5 2H24c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <span>FrameSpace<span style="color: var(--brand-accent)">Studio</span></span>
+            </a>
+            <p class="footer-tagline">Your perfect shot starts here. Professional spaces, premium equipment, endless possibilities.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter/X">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="./home1.html">Home 1 </a></li>
+              <li><a href="./home2.html">Home 2</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+               <li><a href="./AdminDashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+
+  
+          <div class="footer-col">
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Studio Lighting</a></li>
+              <li><a href="#services">Backdrop Collection</a></li>
+              <li><a href="#services">Equipment Rental</a></li>
+              <li><a href="#services">Makeup &amp; Styling</a></li>
+              <li><a href="#services">Retouching Suite</a></li>
+              <li><a href="#services">Catering</a></li>
+            </ul>
+            <div class="footer-col">
+            <h4 class="footer-heading">additional</h4>
+            <ul class="footer-links">
+              <li><a href="./comingSoon.html">Coming Soon</a></li>
+              <li><a href="./404Page.html">404</a></li>
+            </ul>
+          </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Stay Updated</h4>
+            <p class="footer-newsletter-text">Subscribe to our newsletter for studio updates, deals and photography tips.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+              <input type="email" placeholder="your@email.com" class="newsletter-input" data-ocid="footer.email_input" aria-label="Email for newsletter" />
+              <button type="submit" class="btn btn-primary newsletter-btn" data-ocid="footer.subscribe_button">Subscribe</button>
+            </form>
+            <div class="footer-contact-info">
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              19/110,Madhapur,Hyderabad.
+              </p>
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.95 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.89 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +91 9876543210
+              </p>
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                hello@framespacestudio.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="footerYear"></span> FrameSpace Studio. Built with ♥ using for Photoshoot</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="Js/service.js"></script>
+</body>
+</html>
+
+

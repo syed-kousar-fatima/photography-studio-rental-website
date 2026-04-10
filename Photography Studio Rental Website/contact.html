@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameSpace Studio</title>
+    <link rel="stylesheet" href="Css/contact.css">
+    <link rel="icon" href="./logo.jpg" type="image/x-icon">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo" data-ocid="header.home_link">
+        <img src="./logo.jpg" style="height:40px;width:auto;object-fit:contain;">
+        <span class="logo-text">FrameSpace<span class="logo-accent">Studio</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-item">
+          <a href="home1.html" data-ocid="header.home_link" class="nav-link ">Home</a>
+          <div class="dropdown-menu">
+            <a href="./home1.html" class="dropdown-item">Home 1</a>
+             <a href="./home2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </div>
+        <a href="about.html" data-ocid="header.studios_link" class="nav-link">About</a>
+     
+          <a href="services.html" data-ocid="header.services_link" class="nav-link">Services</a>
+       
+          <a href="blog.html" data-ocid="header.blog_link" class="nav-link ">Blog</a>
+        <a href="contact.html" data-ocid="header.contact_link" class="nav-link active ">Contact</a>
+         <a href="./AdminDashboard.html" data-ocid="header.AdminDashboard" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="header-actions">
+        
+        <button class="icon-btn theme-btn" id="themeToggle" data-ocid="header.theme_toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+<button class="icon-btn rtl-btn" id="rtlToggle"
+  aria-label="Toggle RTL/LTR" title="Toggle RTL">
+  <span class="rtl-text">LTR</span>
+</button>
+       
+        
+  <a href="./loginRegister.html" class="btn btn-primary header-cta" data-ocid="header.sign_up_button">Sign Up</a>
+        <a href="./contact.html" class="btn btn-outline-white btn-lg header-cta" data-ocid="header.book_now_button" style="color: var(--brand-accent);">Book Now</a>
+        <button class="hamburger" id="hamburgerBtn" data-ocid="header.hamburger_button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+      </div>
+    </div>
+
+ 
+    <div class="mobile-nav" id="mobileNav" data-ocid="header.mobile_menu" aria-hidden="true">
+      <nav>
+        <a href="./home1.html" data-ocid="header.home_link" class="mobile-nav-link">Home 1</a>
+        <a href="./home.html" data-ocid="header.home_link" class="mobile-nav-link">Home 2</a>
+        <a href="about.html" data-ocid="header.studios_link" class="mobile-nav-link">About</a>
+        <a href="services.html" data-ocid="header.services_link" class="mobile-nav-link">Services</a>
+        <a href="blog.html" data-ocid="header.pricing_link" class="mobile-nav-link">Blog</a>
+        <a href="contact.html" data-ocid="header.contact_link" class="mobile-nav-link">Contact</a>
+        <a href="./AdminDashboard.html" data-ocid="header.AdminDashboard" class="mobile-nav-link">Admin Dashboard</a>
+        <div class="mobile-nav-actions">
+          <a href="./loginRegister.html">
+          <button class="icon-btn" data-ocid="header.login_button" aria-label="Login">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Login / Register
+          </button></a>  
+        </div>
+      </nav>
+    </div>
+  </header>
+<main>
+  <section class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-content reveal-up">
+        <div class="section-tag">Get In Touch</div>
+        <h1 class="section-title">Let’s Start Your <br><span class="gradient-text">Next Production</span></h1>
+        <p class="section-subtitle">Whether you're booking a quick portrait session or planning a global commercial campaign, our team is ready to provide the technical foundation for your success.</p>
+      </div>
+
+      <div class="contact-details-grid reveal-up">
+        <div class="contact-card hover-lift">
+          <div class="card-icon">📞</div>
+          <h3>Call Us</h3>
+          <p>Direct production line for urgent bookings and technical inquiries.</p>
+          <a href="tel:+15552345678" class="contact-link">+1 (555) 234-5678</a>
+        </div>
+
+        <div class="contact-card hover-lift">
+          <div class="card-icon">📧</div>
+          <h3>Email Us</h3>
+          <p>Send us your project briefs, moodboards, or general questions.</p>
+          <a href="mailto:hello@framespacestudio.com" class="contact-link">hello@framespacestudio.com</a>
+        </div>
+
+        <div class="contact-card hover-lift">
+          <div class="card-icon">🌐</div>
+          <h3>Socials</h3>
+          <p>Follow our behind-the-scenes and latest concept set reveals.</p>
+          <div class="social-pills">
+            <a href="#" class="social-pill">Instagram</a>
+            <a href="#" class="social-pill">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry-section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="inquiry-layout">
+        <div class="inquiry-visual reveal-left">
+          <div class="visual-wrapper">
+            <img src="contact-us.jpg" alt="Studio Interior" class="form-img">
+            <div class="visual-quote">
+              <p>"The space is just the beginning. The support is what makes the art."</p>
+              <span>— Studio Director</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="inquiry-form-container reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-header">
+              <h2>Send an Inquiry</h2>
+              <p>Fill out the form below and our studio manager will respond within 2 business hours.</p>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-input" placeholder="john@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Project Type</label>
+                <select class="form-input">
+                  <option>Portrait Session</option>
+                  <option>Commercial Shoot</option>
+                  <option>Pre-Wedding</option>
+                  <option>Event Coverage</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Preferred Date</label>
+                <input type="date" class="form-input">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Project Details</label>
+              <textarea class="form-input" rows="4" placeholder="Tell us about your creative vision or equipment needs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg w-full">Send Message</button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="location-section">
+    <div class="container">
+      <div class="location-header reveal-up">
+        <div class="section-tag">Visit Us</div>
+        <h2 class="section-title">The Studio Location</h2>
+      </div>
+
+      <div class="map-wrapper reveal-up">
+     
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2157071441!2d-73.9878441!3d40.7579747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1678000000000!5m2!1sen!2sus" 
+            width="100%" 
+            height="500" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="location-overlay reveal-right">
+          <div class="overlay-card">
+            <h3>FrameSpace HQ</h3>
+            <p>123 Studio Lane, Creative District<br>New York, NY 10001</p>
+            <div class="hours-list">
+              <div class="hour-item"><span>Mon - Fri</span><strong>08:00 - 20:00</strong></div>
+              <div class="hour-item"><span>Sat - Sun</span><strong>10:00 - 18:00</strong></div>
+            </div>
+            <p class="parking-note">Free secure parking available for production trucks and clients.</p>
+            <a href="https://maps.google.com" target="_blank" class="btn btn-sm btn-primary">Get Directions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+    
+          <div class="footer-col footer-brand">
+            <a href="#home" class="footer-logo">
+              <div class="logo-icon">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.15"/>
+                  <path d="M6 11C6 9.9 6.9 9 8 9h2.5l1.5-2h8l1.5 2H24c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <span>FrameSpace<span style="color: var(--brand-accent)">Studio</span></span>
+            </a>
+            <p class="footer-tagline">Your perfect shot starts here. Professional spaces, premium equipment, endless possibilities.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter/X">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="./home1.html">Home 1 </a></li>
+              <li><a href="./home2.html">Home 2</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+               <li><a href="./AdminDashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+
+  
+          <div class="footer-col">
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Studio Lighting</a></li>
+              <li><a href="#services">Backdrop Collection</a></li>
+              <li><a href="#services">Equipment Rental</a></li>
+              <li><a href="#services">Makeup &amp; Styling</a></li>
+              <li><a href="#services">Retouching Suite</a></li>
+              <li><a href="#services">Catering</a></li>
+            </ul>
+            <div class="footer-col">
+            <h4 class="footer-heading">additional</h4>
+            <ul class="footer-links">
+              <li><a href="./comingSoon.html">Coming Soon</a></li>
+              <li><a href="./404Page.html">404</a></li>
+            </ul>
+          </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Stay Updated</h4>
+            <p class="footer-newsletter-text">Subscribe to our newsletter for studio updates, deals and photography tips.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+              <input type="email" placeholder="your@email.com" class="newsletter-input" data-ocid="footer.email_input" aria-label="Email for newsletter" />
+              <button type="submit" class="btn btn-primary newsletter-btn" data-ocid="footer.subscribe_button">Subscribe</button>
+            </form>
+            <div class="footer-contact-info">
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              19/110,Madhapur,Hyderabad.
+              </p>
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.95 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.89 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +91 9876543210
+              </p>
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                hello@framespacestudio.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="footerYear"></span> FrameSpace Studio. Built with ♥ using for Photoshoot</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="Js/contact.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

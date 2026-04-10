@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameSpace Studio</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="icon" href="./logo.jpg" type="image/x-icon">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo" data-ocid="header.home_link">
+        <img src="./logo.jpg" style="height:40px;width:auto;object-fit:contain;">
+        <span class="logo-text">FrameSpace<span class="logo-accent">Studio</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-item">
+          <a href="home1.html" data-ocid="header.home_link" class="nav-link active">Home</a>
+          <div class="dropdown-menu">
+            <a href="./home1.html" class="dropdown-item">Home 1</a>
+             <a href="./home2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </div>
+        <a href="about.html" data-ocid="header.studios_link" class="nav-link">About</a>
+     
+          <a href="services.html" data-ocid="header.services_link" class="nav-link">Services</a>
+       
+          <a href="blog.html" data-ocid="header.blog_link" class="nav-link ">Blog</a>
+        <a href="contact.html" data-ocid="header.contact_link" class="nav-link">Contact</a>
+         <a href="./AdminDashboard.html" data-ocid="header.AdminDashboard" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="header-actions">
+        
+        <button class="icon-btn theme-btn" id="themeToggle" data-ocid="header.theme_toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+<button class="icon-btn rtl-btn" id="rtlToggle"
+  aria-label="Toggle RTL/LTR" title="Toggle RTL">
+  <span class="rtl-text">LTR</span>
+</button>
+       
+        
+  <a href="./loginRegister.html" class="btn btn-primary header-cta" data-ocid="header.sign_up_button">Sign Up</a>
+        <a href="./contact.html" class="btn btn-outline-white btn-lg header-cta" data-ocid="header.book_now_button" style="color: var(--brand-accent);">Book Now</a>
+        <button class="hamburger" id="hamburgerBtn" data-ocid="header.hamburger_button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+      </div>
+    </div>
+
+ 
+    <div class="mobile-nav" id="mobileNav" data-ocid="header.mobile_menu" aria-hidden="true">
+      <nav>
+        <a href="./home1.html" data-ocid="header.home_link" class="mobile-nav-link">Home 1</a>
+        <a href="./home2.html" data-ocid="header.home_link" class="mobile-nav-link">Home 2</a>
+        <a href="about.html" data-ocid="header.studios_link" class="mobile-nav-link">About</a>
+        <a href="services.html" data-ocid="header.services_link" class="mobile-nav-link">Services</a>
+        <a href="blog.html" data-ocid="header.pricing_link" class="mobile-nav-link">Blog</a>
+        <a href="contact.html" data-ocid="header.contact_link" class="mobile-nav-link">Contact</a>
+        <a href="./AdminDashboard.html" data-ocid="header.AdminDashboard" class="mobile-nav-link">Admin Dashboard</a>
+        <div class="mobile-nav-actions">
+          <a href="./loginRegister.html">
+          <button class="icon-btn" data-ocid="header.login_button" aria-label="Login">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Login / Register
+          </button></a>  
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+   
+    <section class="hero-section" id="home">
+      <div class="hero-bg">
+        <img src="bg-index.webp" width="1600" height="900" alt="Professional photography studio interior with dramatic lighting setup" class="hero-bg-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content reveal-up">
+        <div class="hero-badge">✦ Professional Studio Rental</div>
+        <h1 class="hero-headline">Your Vision,<br/><span class="hero-accent">Our Space</span></h1>
+        <p class="hero-subtext">Professional photography studios available by the hour.<br/>Fully equipped. Book instantly.</p>
+        <div class="hero-ctas">
+          <a href="#studios" class="btn btn-primary btn-lg" data-ocid="hero.explore_button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Explore Studios
+          </a>
+          <a href="#gallery" class="btn btn-outline-white btn-lg" data-ocid="hero.gallery_button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            View Gallery
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="hero-stat-num">500+</span><span class="hero-stat-label">Studios Booked</span></div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat"><span class="hero-stat-num">200+</span><span class="hero-stat-label">Happy Clients</span></div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat"><span class="hero-stat-num">6</span><span class="hero-stat-label">Unique Spaces</span></div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="studios-section" id="studios">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-tag">Our Spaces</div>
+          <h2 class="section-title">Our Studios</h2>
+          <p class="section-subtitle">6 uniquely designed spaces for every creative vision</p>
+        </div>
+        <div class="studios-grid">
+          <article class="studio-card reveal-up" data-ocid="studios.item.1" style="--delay: 0.1s">
+            <div class="studio-card-img-wrap">
+              <img src="eclipse.webp" width="800" height="600" alt="Eclipse Studio - dramatic black walls and professional lighting" class="studio-card-img" loading="lazy" />
+              <div class="studio-badge">$85/hr</div>
+            </div>
+            <div class="studio-card-body">
+              <div class="studio-tags">
+                <span class="tag">Dramatic Lighting</span>
+                <span class="tag">4hr min</span>
+              </div>
+              <h3 class="studio-name">Eclipse Studio</h3>
+              <p class="studio-desc">Dramatic black walls and professional lighting rigs create cinematic, editorial imagery for any creative vision.</p>
+              <div class="studio-meta">
+                <span class="studio-capacity">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  Up to 10 people
+                </span>
+                <span class="studio-price">From $85/hr</span>
+              </div>
+              <a href="#pricing" class="btn btn-primary studio-btn" data-ocid="studios.book_button.1">Book Studio</a>
+            </div>
+          </article>
+
+ 
+          <article class="studio-card reveal-up" data-ocid="studios.item.2" style="--delay: 0.2s">
+            <div class="studio-card-img-wrap">
+              <img src="luminary.webp" width="800" height="600" alt="Luminary Studio - bright natural light photography space" class="studio-card-img" loading="lazy" />
+              <div class="studio-badge">$75/hr</div>
+            </div>
+            <div class="studio-card-body">
+              <div class="studio-tags">
+                <span class="tag">Natural Light</span>
+                <span class="tag">2hr min</span>
+              </div>
+              <h3 class="studio-name">Luminary Studio</h3>
+              <p class="studio-desc">Floor-to-ceiling windows flood this serene space with warm, natural daylight — perfect for lifestyle and editorial shoots.</p>
+              <div class="studio-meta">
+                <span class="studio-capacity">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  Up to 8 people
+                </span>
+                <span class="studio-price">From $75/hr</span>
+              </div>
+              <a href="#pricing" class="btn btn-primary studio-btn" data-ocid="studios.book_button.2">Book Studio</a>
+            </div>
+          </article>
+
+          <article class="studio-card reveal-up" data-ocid="studios.item.3" style="--delay: 0.3s">
+            <div class="studio-card-img-wrap">
+              <img src="loft22.webp" width="800" height="600" alt="Loft 22 - industrial photography studio with exposed brick" class="studio-card-img" loading="lazy" />
+              <div class="studio-badge studio-badge-featured">$95/hr</div>
+            </div>
+            <div class="studio-card-body">
+              <div class="studio-tags">
+                <span class="tag">Industrial</span>
+                <span class="tag">3hr min</span>
+              </div>
+              <h3 class="studio-name">Loft 22</h3>
+              <p class="studio-desc">Urban industrial loft with exposed brick, wooden beams and concrete floors. Our largest space for big productions.</p>
+              <div class="studio-meta">
+                <span class="studio-capacity">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  Up to 15 people
+                </span>
+                <span class="studio-price">From $95/hr</span>
+              </div>
+              <a href="#pricing" class="btn btn-primary studio-btn" data-ocid="studios.book_button.3">Book Studio</a>
+            </div>
+          </article>
+          <article class="studio-card reveal-up" data-ocid="studios.item.4" style="--delay: 0.1s">
+            <div class="studio-card-img-wrap">
+              <img src="spectrum.webp" width="800" height="600" alt="Spectrum Studio - colorful backdrops and vibrant photography space" class="studio-card-img" loading="lazy" />
+              <div class="studio-badge">$65/hr</div>
+            </div>
+            <div class="studio-card-body">
+              <div class="studio-tags">
+                <span class="tag">Colorful</span>
+                <span class="tag">2hr min</span>
+              </div>
+              <h3 class="studio-name">Spectrum Studio</h3>
+              <p class="studio-desc">Rainbow of seamless paper backdrops, vibrant walls and professional lighting — bring your most colorful concepts to life.</p>
+              <div class="studio-meta">
+                <span class="studio-capacity">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  Up to 6 people
+                </span>
+                <span class="studio-price">From $65/hr</span>
+              </div>
+              <a href="#pricing" class="btn btn-primary studio-btn" data-ocid="studios.book_button.4">Book Studio</a>
+            </div>
+          </article>
+
+          <article class="studio-card reveal-up" data-ocid="studios.item.5" style="--delay: 0.2s">
+            <div class="studio-card-img-wrap">
+              <img src="velvet room.webp" width="800" height="600" alt="Velvet Room - elegant portrait photography studio" class="studio-card-img" loading="lazy" />
+              <div class="studio-badge">$80/hr</div>
+            </div>
+            <div class="studio-card-body">
+              <div class="studio-tags">
+                <span class="tag">Portrait</span>
+                <span class="tag">2hr min</span>
+              </div>
+              <h3 class="studio-name">Velvet Room</h3>
+              <p class="studio-desc">Intimate and luxurious. Velvet backdrops, moody lighting and beauty setup for portraits that leave a lasting impression.</p>
+              <div class="studio-meta">
+                <span class="studio-capacity">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  Up to 5 people
+                </span>
+                <span class="studio-price">From $80/hr</span>
+              </div>
+              <a href="#pricing" class="btn btn-primary studio-btn" data-ocid="studios.book_button.5">Book Studio</a>
+            </div>
+          </article>
+
+          <article class="studio-card reveal-up" data-ocid="studios.item.6" style="--delay: 0.3s">
+            <div class="studio-card-img-wrap">
+              <img src="clean slate.webp" width="800" height="600" alt="Clean Slate - minimalist product photography studio" class="studio-card-img" loading="lazy" />
+              <div class="studio-badge">$70/hr</div>
+            </div>
+            <div class="studio-card-body">
+              <div class="studio-tags">
+                <span class="tag">Product</span>
+                <span class="tag">1hr min</span>
+              </div>
+              <h3 class="studio-name">Clean Slate</h3>
+              <p class="studio-desc">Pure white cyclorama, precise directional lighting and product shooting tables for flawless commercial imagery.</p>
+              <div class="studio-meta">
+                <span class="studio-capacity">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  Up to 4 people
+                </span>
+                <span class="studio-price">From $70/hr</span>
+              </div>
+              <a href="#pricing" class="btn btn-primary studio-btn" data-ocid="studios.book_button.6">Book Studio</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="why-section" id="about">
+      <div class="why-bg-shapes" aria-hidden="true">
+        <div class="why-shape why-shape-1"></div>
+        <div class="why-shape why-shape-2"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal-up" style="--color: white">
+          <div class="section-tag light">Our Advantage</div>
+          <h2 class="section-title" style="color: white">Why Photographers Choose Us</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.7)">Join hundreds of creative professionals who call FrameSpace their creative home</p>
+        </div>
+
+    
+        <div class="stats-grid reveal-up">
+          <div class="stat-card">
+            <div class="stat-number" data-target="500">0</div>
+            <div class="stat-symbol">+</div>
+            <div class="stat-label">Studios Booked</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="200">0</div>
+            <div class="stat-symbol">+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="6">0</div>
+            <div class="stat-symbol"></div>
+            <div class="stat-label">Unique Spaces</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="98">0</div>
+            <div class="stat-symbol">%</div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+        </div>
+
+        
+        <div class="features-grid reveal-up">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Premium Equipment</h3>
+            <p>Full studio lighting, backdrops, modifiers and reflectors included with every booking. No hidden costs.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3>Flexible Booking</h3>
+            <p>Book by the hour, no long-term commitments. Scale up or down based on your project needs.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>24/7 Access</h3>
+            <p>Round-the-clock access for all booked sessions. Early mornings, late nights — we're always open.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Expert Support</h3>
+            <p>On-call studio technicians available to assist with lighting setups and equipment throughout your shoot.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="how-section" id="how-it-works">
+      <div class="container">
+        <div class="how-inner">
+          <div class="how-content">
+            <div class="section-header reveal-up" style="text-align: left; padding: 0; margin-bottom: 3rem;">
+              <div class="section-tag">Process</div>
+              <h2 class="section-title">Book in 3<br/>Simple Steps</h2>
+              <p class="section-subtitle">From browsing to shooting — our streamlined process gets you in the studio faster.</p>
+            </div>
+            <div class="steps-list">
+              <div class="step reveal-left">
+                <div class="step-number">01</div>
+                <div class="step-body">
+                  <div class="step-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  </div>
+                  <h3>Browse Studios</h3>
+                  <p>Explore our portfolio of uniquely designed spaces. Filter by size, style, availability and budget to find your perfect match.</p>
+                </div>
+              </div>
+              <div class="step-connector" aria-hidden="true"></div>
+              <div class="step reveal-left" style="--delay:0.15s">
+                <div class="step-number">02</div>
+                <div class="step-body">
+                  <div class="step-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  </div>
+                  <h3>Choose Your Date</h3>
+                  <p>Pick your session date and time slot. Instant availability confirmation and easy online payment secures your booking.</p>
+                </div>
+              </div>
+              <div class="step-connector" aria-hidden="true"></div>
+              <div class="step reveal-left" style="--delay:0.3s">
+                <div class="step-number">03</div>
+                <div class="step-body">
+                  <div class="step-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  </div>
+                  <h3>Shoot & Create</h3>
+                  <p>Arrive to a pre-set studio with all equipment ready. Our technicians help with setup so you can focus on creating.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="how-image reveal-right">
+            <div class="how-image-frame">
+              <img src="fashion photo.jpg" width="800" height="600" alt="Fashion photographer working in a professional studio" loading="lazy" />
+              <div class="how-image-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Instant Booking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal-up" style="--color: white">
+          <div class="section-tag light">Portfolio</div>
+          <h2 class="section-title" style="color: white">Creative Work from<br/>Our Studios</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.6)">Real work shot in our spaces by the world's best photographers</p>
+        </div>
+
+        <div class="gallery-filters reveal-up">
+          <button class="filter-btn active" data-filter="all" data-ocid="gallery.filter.tab">All</button>
+          <button class="filter-btn" data-filter="portraits" data-ocid="gallery.filter.tab">Portraits</button>
+          <button class="filter-btn" data-filter="products" data-ocid="gallery.filter.tab">Products</button>
+          <button class="filter-btn" data-filter="weddings" data-ocid="gallery.filter.tab">Weddings</button>
+          <button class="filter-btn" data-filter="fashion" data-ocid="gallery.filter.tab">Fashion</button>
+          <button class="filter-btn" data-filter="food" data-ocid="gallery.filter.tab">Food</button>
+        </div>
+
+        <div class="gallery-masonry reveal-up">
+          <div class="gallery-item tall" data-category="portraits">
+            <img src="professional-woman.jpg" width="600" height="800" alt="Professional portrait photography - elegant woman with dramatic studio lighting" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Portraits</span>
+              <div class="gallery-expand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item wide" data-category="products">
+            <img src="product.jpg" width="600" height="400" alt="Luxury product photography - perfume bottle on marble surface" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Products</span>
+              <div class="gallery-expand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item tall" data-category="weddings">
+            <img src="wedding.jpg" width="600" height="800" alt="Wedding portrait photography - bride and groom in studio" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Weddings</span>
+              <div class="gallery-expand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item wide" data-category="portraits">
+            <img src="professional-man.jpg" width="600" height="400" alt="Male business portrait with dramatic studio lighting" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Portraits</span>
+              <div class="gallery-expand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item tall" data-category="fashion">
+            <img src="fashion.jpg" width="600" height="800" alt="Fashion editorial photography with colorful gel lighting" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Fashion</span>
+              <div class="gallery-expand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item wide" data-category="food">
+            <img src="food.webp" width="600" height="400" alt="Professional food photography on rustic wooden table" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Food</span>
+              <div class="gallery-expand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="services-section" id="services">
+      <div class="services-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-tag">Add-ons</div>
+          <h2 class="section-title">Everything You Need</h2>
+          <p class="section-subtitle">Professional add-on services to complete your shoot from start to finish</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal-up" style="--delay:0.05s; --accent: #E85D4A">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon" style="--icon-color: #E85D4A">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </div>
+                <span class="service-price-badge">Included</span>
+                <h3>Studio Lighting</h3>
+                <p>4-point professional lighting setup with softboxes, modifiers, and reflectors pre-configured for your shoot.</p>
+              </div>
+              <div class="service-back">
+                <h3>Studio Lighting</h3>
+                <ul>
+                  <li>4-point lighting setup</li>
+                  <li>Softboxes &amp; modifiers</li>
+                  <li>Reflectors &amp; diffusers</li>
+                  <li>Colour gels included</li>
+                </ul>
+                <a href="#pricing" class="btn btn-sm btn-white">Add to Booking</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card reveal-up" style="--delay:0.1s; --accent: #4A90D9">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon" style="--icon-color: #4A90D9">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                </div>
+                <span class="service-price-badge">+$25/session</span>
+                <h3>Backdrop Collection</h3>
+                <p>Over 20 colored backdrops including seamless paper, fabric, and textured options for every style.</p>
+              </div>
+              <div class="service-back">
+                <h3>Backdrop Collection</h3>
+                <ul>
+                  <li>20+ color options</li>
+                  <li>Seamless paper rolls</li>
+                  <li>Fabric backdrops</li>
+                  <li>Textured patterns</li>
+                </ul>
+                <a href="#pricing" class="btn btn-sm btn-white">Add to Booking</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card reveal-up" style="--delay:0.15s; --accent: #7C5CBF">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon" style="--icon-color: #7C5CBF">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                </div>
+                <span class="service-price-badge">+$50/session</span>
+                <h3>Equipment Rental</h3>
+                <p>Professional cameras, lenses, stabilizers and accessories available to supplement your own gear.</p>
+              </div>
+              <div class="service-back">
+                <h3>Equipment Rental</h3>
+                <ul>
+                  <li>Sony / Canon / Nikon bodies</li>
+                  <li>Prime &amp; zoom lenses</li>
+                  <li>Gimbals &amp; stabilizers</li>
+                  <li>Drone available</li>
+                </ul>
+                <a href="#pricing" class="btn btn-sm btn-white">Add to Booking</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card reveal-up" style="--delay:0.2s; --accent: #E0A145">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon" style="--icon-color: #E0A145">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <span class="service-price-badge">+$75/session</span>
+                <h3>Makeup &amp; Styling</h3>
+                <p>Private makeup room with vanity mirror, professional lighting, wardrobe space and full-length mirror.</p>
+              </div>
+              <div class="service-back">
+                <h3>Makeup &amp; Styling</h3>
+                <ul>
+                  <li>Pro vanity mirror setup</li>
+                  <li>Wardrobe &amp; rails</li>
+                  <li>Full-length mirror</li>
+                  <li>Hair tools available</li>
+                </ul>
+                <a href="#pricing" class="btn btn-sm btn-white">Add to Booking</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card reveal-up" style="--delay:0.25s; --accent: #3DAA78">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon" style="--icon-color: #3DAA78">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <span class="service-price-badge">+$40/hr</span>
+                <h3>Retouching Suite</h3>
+                <p>iMac workstations loaded with Lightroom, Photoshop and Capture One. Fast-turnaround post-production.</p>
+              </div>
+              <div class="service-back">
+                <h3>Retouching Suite</h3>
+                <ul>
+                  <li>iMac Pro workstations</li>
+                  <li>Lightroom CC &amp; Photoshop</li>
+                  <li>Wacom tablets</li>
+                  <li>Calibrated monitors</li>
+                </ul>
+                <a href="#pricing" class="btn btn-sm btn-white">Add to Booking</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card reveal-up" style="--delay:0.3s; --accent: #D95CAA">
+            <div class="service-card-inner">
+              <div class="service-front">
+                <div class="service-icon" style="--icon-color: #D95CAA">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                </div>
+                <span class="service-price-badge">From $30</span>
+                <h3>Catering</h3>
+                <p>Keep your team fueled with specialty coffee, fresh snacks and full catering options for longer sessions.</p>
+              </div>
+              <div class="service-back">
+                <h3>Catering</h3>
+                <ul>
+                  <li>Specialty coffee bar</li>
+                  <li>Fresh snack selection</li>
+                  <li>Full catering menus</li>
+                  <li>Dietary options available</li>
+                </ul>
+                <a href="#pricing" class="btn btn-sm btn-white">Add to Booking</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="testimonials-section">
+      <div class="testimonials-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header reveal-up" style="--color: white">
+          <div class="section-tag light">Reviews</div>
+          <h2 class="section-title" style="color: white">What Photographers Say</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.65)">Real stories from the photographers who trust FrameSpace with their best work</p>
+        </div>
+        <div class="testimonial-carousel-wrap reveal-up">
+          <div class="testimonial-carousel" id="testimonialCarousel">
+         
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <blockquote>"The Eclipse Studio transformed my editorial work. The lighting setup is world-class and the team helped me achieve looks I never could in my previous studio."</blockquote>
+              <div class="testimonial-author">
+                <img src="testi-1.webp" width="200" height="200" alt="Sarah Chen - Fashion Photographer" loading="lazy" class="testimonial-avatar" />
+                <div>
+                  <strong>Sarah Chen</strong>
+                  <span>Fashion Photographer</span>
+                </div>
+              </div>
+            </div>
+     
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <blockquote>"Booked Loft 22 for a commercial product campaign. The space exceeded every expectation — it's massive, versatile and perfectly equipped."</blockquote>
+              <div class="testimonial-author">
+                <img src="m1.webp" width="200" height="200" alt="Marcus Williams - Commercial Photographer" loading="lazy" class="testimonial-avatar" />
+                <div>
+                  <strong>Marcus Williams</strong>
+                  <span>Commercial Photographer</span>
+                </div>
+              </div>
+            </div>
+       
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <blockquote>"Velvet Room is an absolute dream. My portrait clients always leave amazed by the results. The intimacy and lighting are just perfect."</blockquote>
+              <div class="testimonial-author">
+                <img src="m2.webp" width="200" height="200" alt="Priya Sharma - Portrait Artist" loading="lazy" class="testimonial-avatar" />
+                <div>
+                  <strong>Micheal Jhonson</strong>
+                  <span>Portrait Artist</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <blockquote>"Flexibility and equipment quality are absolutely unmatched anywhere in the city. I use FrameSpace for every wedding preview shoot. 10/10 recommend."</blockquote>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar-placeholder">JO</div>
+                <div>
+                  <strong>James O'Brien</strong>
+                  <span>Wedding Photographer</span>
+                </div>
+              </div>
+            </div>
+      
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <blockquote>"Clean Slate studio is exactly what my product shoots need. Immaculately white, bright, and professional. My clients love the results every time."</blockquote>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar-placeholder">AT</div>
+                <div>
+                  <strong>Aiko Tanaka</strong>
+                  <span>Content Creator</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <blockquote>"From booking to shoot day, everything was completely seamless. The online booking system is a breeze and the studios are always perfectly prepared."</blockquote>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar-placeholder">DO</div>
+                <div>
+                  <strong>David Osei</strong>
+                  <span>Brand Photographer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn" data-ocid="testimonials.prev_button" aria-label="Previous testimonials">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button class="carousel-btn" id="nextBtn" data-ocid="testimonials.next_button" aria-label="Next testimonials">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-tag">Pricing</div>
+          <h2 class="section-title">Simple, Transparent Pricing</h2>
+          <p class="section-subtitle">No hidden fees. No surprises. Just great studios at honest prices.</p>
+        </div>
+
+        <div class="pricing-toggle reveal-up">
+          <span class="toggle-label" id="toggleLabelHourly">Hourly</span>
+          <label class="toggle-switch" aria-label="Toggle billing period">
+            <input type="checkbox" id="billingToggle" data-ocid="pricing.toggle" />
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label" id="toggleLabelDaily">Daily</span>
+        </div>
+
+        <div class="pricing-grid reveal-up">
+        
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="pricing-tier">Basic</h3>
+              <div class="pricing-price">
+                <span class="price-amount">$<span class="price-value" data-hourly="45" data-daily="300">45</span></span>
+                <span class="price-period">/hr</span>
+              </div>
+              <p class="pricing-desc">Perfect for solo shoots and small projects</p>
+            </div>
+            <ul class="pricing-features">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>1 studio space</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Basic lighting kit</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>2 backdrops included</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Email support</li>
+              <li class="pricing-feature-disabled"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Equipment rental</li>
+              <li class="pricing-feature-disabled"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Post-production suite</li>
+            </ul>
+            <a href="#" class="btn btn-outline pricing-cta" data-ocid="pricing.basic_button">Get Started</a>
+          </div>
+
+          <div class="pricing-card pricing-card-featured">
+            <div class="pricing-popular-badge">Most Popular</div>
+            <div class="pricing-card-header">
+              <h3 class="pricing-tier">Pro</h3>
+              <div class="pricing-price">
+                <span class="price-amount">$<span class="price-value" data-hourly="75" data-daily="500">75</span></span>
+                <span class="price-period">/hr</span>
+              </div>
+              <p class="pricing-desc">For professional photographers and small teams</p>
+            </div>
+            <ul class="pricing-features">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>2 studio spaces</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Full lighting kit</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>10 backdrops included</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Equipment rental</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Priority support</li>
+              <li class="pricing-feature-disabled"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Post-production suite</li>
+            </ul>
+            <a href="#" class="btn btn-primary pricing-cta" data-ocid="pricing.pro_button">Get Started</a>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="pricing-tier">Premium</h3>
+              <div class="pricing-price">
+                <span class="price-amount">$<span class="price-value" data-hourly="120" data-daily="800">120</span></span>
+                <span class="price-period">/hr</span>
+              </div>
+              <p class="pricing-desc">Full-service for commercial productions</p>
+            </div>
+            <ul class="pricing-features">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>All studio spaces</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Premium equipment</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Unlimited backdrops</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Dedicated technician</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>24/7 support</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Post-production suite</li>
+            </ul>
+            <a href="#" class="btn btn-outline pricing-cta" data-ocid="pricing.premium_button">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+    
+          <div class="footer-col footer-brand">
+            <a href="#home" class="footer-logo">
+              <div class="logo-icon">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.15"/>
+                  <path d="M6 11C6 9.9 6.9 9 8 9h2.5l1.5-2h8l1.5 2H24c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <span>FrameSpace<span style="color: var(--brand-accent)">Studio</span></span>
+            </a>
+            <p class="footer-tagline">Your perfect shot starts here. Professional spaces, premium equipment, endless possibilities.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter/X">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="./home1.html">Home 1 </a></li>
+              <li><a href="./home2.html">Home 2</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+               <li><a href="./AdminDashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+
+  
+          <div class="footer-col">
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Studio Lighting</a></li>
+              <li><a href="#services">Backdrop Collection</a></li>
+              <li><a href="#services">Equipment Rental</a></li>
+              <li><a href="#services">Makeup &amp; Styling</a></li>
+              <li><a href="#services">Retouching Suite</a></li>
+              <li><a href="#services">Catering</a></li>
+            </ul>
+            <div class="footer-col">
+            <h4 class="footer-heading">additional</h4>
+            <ul class="footer-links">
+              <li><a href="./comingSoon.html">Coming Soon</a></li>
+              <li><a href="./404Page.html">404</a></li>
+            </ul>
+          </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Stay Updated</h4>
+            <p class="footer-newsletter-text">Subscribe to our newsletter for studio updates, deals and photography tips.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+              <input type="email" placeholder="your@email.com" class="newsletter-input" data-ocid="footer.email_input" aria-label="Email for newsletter" />
+              <button type="submit" class="btn btn-primary newsletter-btn" data-ocid="footer.subscribe_button">Subscribe</button>
+            </form>
+            <div class="footer-contact-info">
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              19/110,Madhapur,Hyderabad.
+              </p>
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.95 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.89 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +91 9876543210
+              </p>
+              <p>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                hello@framespacestudio.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="footerYear"></span> FrameSpace Studio. Built with ♥ using for Photoshoot</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="Js/index.js"></script>
+</body>
+</html>
